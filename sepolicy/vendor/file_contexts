@@ -19,7 +19,10 @@
 
 # NFC
 /dev/pn54x                                                                    u:object_r:nfc_device:s0
-/dev/pn553                                                                    u:object_r:nfc_device:s0
+/dev/pn553   
+                                                                 u:object_r:nfc_device:s0
+# Light HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.asus_sdm660                u:object_r:hal_light_default_exec:s0
 
 # blutmac script
 /(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
