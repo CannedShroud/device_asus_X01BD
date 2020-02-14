@@ -162,6 +162,11 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     libvehiclenetwork-native
 
+
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
+# Camera
 PRODUCT_PACKAGES += \
     apdr.conf \
     flp.conf \
