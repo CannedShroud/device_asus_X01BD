@@ -341,9 +341,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librecovery_updater_X01BD
 
-# RetroMusic
-PRODUCT_PACKAGES += \
-    RetroMusic
+
 
 # Seccomp
 PRODUCT_COPY_FILES += \
