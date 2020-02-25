@@ -28,8 +28,7 @@ TARGET_GAPPS_ARCH := arm64
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Build Type
-CUSTOM_BUILD_TYPE := CUSTOM
+
 
 # Google Connectivity Services
 TARGET_INCLUDE_WIFI_EXT := true
