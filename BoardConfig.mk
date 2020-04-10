@@ -56,8 +56,13 @@ TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 TARGET_KERNEL_CONFIG := X01BD_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
+
 # Treble
 BOARD_VNDK_VERSION := current
+
+# Animation for offline charging
+TARGET_PIXEL_CHARGE_ANIM := true
+
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
