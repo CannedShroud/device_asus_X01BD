@@ -40,6 +40,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Apex
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -310,10 +312,6 @@ PRODUCT_COPY_FILES += \
 # Powerhint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
 
 # Radio
 PRODUCT_PACKAGES += \
