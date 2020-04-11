@@ -7,8 +7,13 @@ vendor.bluetooth.soc=cherokee
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
+
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap
+
+# Apex
+ro.apex.updatable=true
+
 
 # CNE
 persist.vendor.cne.feature=1
