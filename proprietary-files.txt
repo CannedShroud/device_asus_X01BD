@@ -25,7 +25,7 @@ vendor/lib64/hw/audio.primary.sdm660.so
 vendor/lib64/libtinycompress_vendor.so
 
 # Camera
-vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/camera.sdm660.so|a29fb8936d1d7d1ee14ccd5f3097f730cb127e5
 vendor/lib/libarcsoft_arc3dnr_intf.so
 vendor/lib/libarcsoft_arcshdr_intf.so
 vendor/lib/libarcsoft_beautyshot.so

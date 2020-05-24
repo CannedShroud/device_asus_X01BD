@@ -286,9 +286,9 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so|00e090806194349ef6235f985f0bca9b
 -product/lib/vendor.qti.hardware.fm@1.0.so|a090651122fcad265ae7562c88dca746f893ad36
 -product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 lib/fm_helium.so|feb4819f1898c67dfda4f965d7cc2711c74d1a99
-lib/libfm-hci.so|7700b02faa484ff682c618402f62b86bf8588db2
+lib/libfm-hci.so|ba1462405b299ddacef3e2dfdc3df0ac9a708c31
 lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
-lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+lib64/libfm-hci.so|fa10bfb11fecd417807d99d3a1991705ec3fda2e
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|2087fee60eb44c097ee9e6c93f4c873fff280866
 vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34d
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|506efd87250697bdae271f86ea472785a77b84ef
@@ -827,7 +827,7 @@ lib/libwfdconfigutils.so|223c6bfaf51057928bbe9b33ecd0d1dcab37a522
 lib/libwfdmminterface.so|c2914c60cb412732d45610e67e7e408f6ad7a45a
 lib/libwfdmmsink.so|987b4d5b40fb584763da477ea08b91c0146bb2b1
 lib/libwfdmmsrc.so|43ee8c98670c9395fd2a6edce1db929760fab1c2
-lib/libwfdnative.so|d94817bec27375411b9a54106851fa17f635edbf
+lib/libwfdnative.so|96ef5b72c531989cdac97b5169b58b00588686ab
 lib/libwfdrtsp.so|6194fed354ed8f26b813b39510d2ee8db729492d
 lib/libwfdservice.so|ba2e446ef8ad69123eaa49814d1fdff4946ff9f6
 lib/libwfdsm.so|2256010a75247f3b1638a31aac332a7ca4bc7364
@@ -843,7 +843,7 @@ lib64/libmmparser_lite.so|a3bb2aefbcca59d845a55682a2bcc36b24433f54
 lib64/libmmrtpdecoder.so|680db93b68a30fef67268c5f8783371a0af22ed7
 lib64/libmmrtpencoder.so|8d03db323d3ee5efce386374769ecf6214d9a13c
 lib64/libwfdclient.so|884bfd6710f05d567eb0083a00ee4889f73d796d
-lib64/libwfdnative.so|581514ff2a731170275cba7117cda4dfc98ab46c
+lib64/libwfdnative.so|f10fdc70715a88031fc1aa151dca18b4acc9ab92
 -priv-app/WfdService/WfdService.apk|8d0a6720b98c52589e0b68df0bf4bc9f2da79549
 vendor/bin/wifidisplayhalservice|56ec79e39595e0c34baba8cb16ab5d1931d793db
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
