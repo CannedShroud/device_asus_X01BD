@@ -171,9 +171,12 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 USE_DEVICE_SPECIFIC_GPS := true
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
+
+ODM_MANIFEST_SKUS += X01BD
+ODM_MANIFEST_X01BD_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_X01BD
@@ -204,9 +207,10 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
