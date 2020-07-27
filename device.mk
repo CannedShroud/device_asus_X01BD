@@ -149,7 +149,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Camera
 PRODUCT_PACKAGES += \
     libxml2 \
-    Snap
+    GCamGo
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
