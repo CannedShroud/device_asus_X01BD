@@ -24,9 +24,9 @@ VENDOR=asus
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-XTENDED_ROOT="${MY_DIR}/../../.."
+EVO_ROOT="${MY_DIR}/../../.."
 
-HELPER="${XTENDED_ROOT}/vendor/xtended/build/tools/extract_utils.sh"
+HELPER="${EVO_ROOT}/vendor/evolution/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -79,7 +79,7 @@ function blob_fixup() {
 }
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${XTENDED_ROOT}" false "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${EVO_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
