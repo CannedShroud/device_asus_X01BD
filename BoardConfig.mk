@@ -27,6 +27,12 @@ BOARD_VENDOR := asus
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno512
 
+
+######### BECAUSE WE USING MINIMAL MANIFEST #########
+ALLOW_MISSING_DEPENDENCIES=true
+TARGET_SUPPORTS_64_BIT_APPS := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -57,7 +63,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 TARGET_KERNEL_CONFIG := etherious_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 12.0.0
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -229,7 +234,6 @@ BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 VENDOR_SECURITY_PATCH := 2020-04-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # WiFi

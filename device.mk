@@ -242,25 +242,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
-# NFC
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_X01BD/android.hardware.nfc.hce.xml \
-#    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_X01BD/android.hardware.nfc.hcef.xml \
-#    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_X01BD/android.hardware.nfc.xml \
-#    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_X01BD/com.android.nfc_extras.xml \
-#    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_X01BD/com.nxp.mifare.xml
-
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-#    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-#    $(LOCAL_PATH)/configs/nfc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf
-
-#PRODUCT_PACKAGES += \
-#    com.android.nfc_extras \
-#    NfcNci \
-#    SecureElement \
-#    Tag
-
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
@@ -284,10 +265,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-PRODUCT_PACKAGES += \
-   PixelOverlay \
-   PixelSettingsOverlay
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -451,10 +428,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-
-# ZenParts
-PRODUCT_PACKAGES += \
-    ZenParts
 
 # Call the proprietary setup
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
