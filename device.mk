@@ -24,6 +24,11 @@ $(call inherit-product, $(LOCAL_PATH)/hidl-hals.mk)
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
+##### Cause minimal manifest ####
+# Prebuilt Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/Kernel/kernel:kernel
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
